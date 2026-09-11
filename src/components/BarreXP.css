@@ -1,0 +1,24 @@
+.barre-xp {
+  display: flex;
+  gap: var(--espace-3);
+}
+
+.barre-xp__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--rayon-rond);
+  font-weight: 800;
+  font-size: 0.85rem;
+  background: var(--couleur-surface);
+  box-shadow: var(--ombre-carte);
+}
+
+.barre-xp__item--xp {
+  color: var(--couleur-accent-fonce);
+}
+
+.barre-xp__item--serie {
+  color: var(--couleur-primaire);
+}

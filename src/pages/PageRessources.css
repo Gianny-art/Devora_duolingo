@@ -1,0 +1,33 @@
+.page-ressources {
+  padding-top: var(--espace-6);
+}
+
+.page-ressources__liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-3);
+  margin-top: var(--espace-5);
+}
+
+.page-ressources__chapitre {
+  font-weight: 800;
+  color: var(--couleur-texte);
+  margin-bottom: var(--espace-2);
+}
+
+.page-ressources__liens {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-2);
+}
+
+.page-ressources__liens a {
+  color: var(--couleur-primaire);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-ressources__liens a:hover {
+  text-decoration: underline;
+}

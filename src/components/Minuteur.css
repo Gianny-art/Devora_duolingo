@@ -1,0 +1,36 @@
+.minuteur {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-3);
+}
+
+.minuteur__barre {
+  flex: 1;
+  height: 10px;
+  border-radius: var(--rayon-rond);
+  background: var(--couleur-bordure);
+  overflow: hidden;
+}
+
+.minuteur__remplissage {
+  height: 100%;
+  background: var(--couleur-primaire);
+  border-radius: var(--rayon-rond);
+  transition: width 1s linear;
+}
+
+.minuteur--critique .minuteur__remplissage {
+  background: var(--couleur-erreur);
+}
+
+.minuteur__temps {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--couleur-texte);
+  min-width: 42px;
+  text-align: right;
+}
+
+.minuteur--critique .minuteur__temps {
+  color: var(--couleur-erreur);
+}

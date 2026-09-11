@@ -1,0 +1,86 @@
+.page-profil {
+  padding-top: var(--espace-7);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-profil__mascotte {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--espace-4);
+}
+
+.page-profil__formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-2);
+  margin-top: var(--espace-5);
+}
+
+.page-profil__label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--couleur-texte);
+  margin-top: var(--espace-3);
+}
+
+.page-profil__champ {
+  padding: var(--espace-4);
+  border-radius: var(--rayon-m);
+  border: 2px solid var(--couleur-bordure);
+  font-size: 1rem;
+}
+
+.page-profil__champ:focus {
+  outline: none;
+  border-color: var(--couleur-primaire);
+}
+
+.page-profil__couleurs {
+  display: flex;
+  gap: var(--espace-3);
+  margin-bottom: var(--espace-4);
+}
+
+.page-profil__pastille-couleur {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.page-profil__pastille-couleur--active {
+  border-color: var(--couleur-texte);
+}
+
+.page-profil__stats {
+  display: flex;
+  gap: var(--espace-3);
+  margin: var(--espace-6) 0;
+}
+
+.page-profil__stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.page-profil__stat-valeur {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--couleur-primaire);
+}
+
+.page-profil__stat-label {
+  font-size: 0.75rem;
+  color: var(--couleur-texte-doux);
+  text-align: center;
+}
+
+.page-profil__zone-danger {
+  margin-top: auto;
+  padding-bottom: var(--espace-6);
+}

@@ -1,0 +1,75 @@
+.page-quiz {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--espace-5);
+}
+
+.page-quiz__progression {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-3);
+  margin-bottom: var(--espace-6);
+}
+
+.page-quiz__barre {
+  flex: 1;
+  height: 10px;
+  border-radius: var(--rayon-rond);
+  background: var(--couleur-bordure);
+  overflow: hidden;
+}
+
+.page-quiz__remplissage {
+  height: 100%;
+  background: var(--couleur-primaire);
+  border-radius: var(--rayon-rond);
+  transition: width 0.3s ease;
+}
+
+.page-quiz__progression span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--couleur-texte-doux);
+  white-space: nowrap;
+}
+
+.page-quiz__lecture {
+  margin-bottom: var(--espace-4);
+}
+
+.page-quiz__question {
+  flex: 1;
+}
+
+.page-quiz__retour {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-4);
+  padding: var(--espace-4);
+  border-radius: var(--rayon-m);
+  margin-top: var(--espace-5);
+}
+
+.page-quiz__retour--correct {
+  background: var(--couleur-succes-clair);
+}
+
+.page-quiz__retour--incorrect {
+  background: var(--couleur-erreur-clair);
+}
+
+.page-quiz__retour-titre {
+  font-weight: 800;
+  color: var(--couleur-texte);
+}
+
+.page-quiz__retour-texte {
+  font-size: 0.88rem;
+  color: var(--couleur-texte-doux);
+  margin-top: 2px;
+}
+
+.page-quiz__action {
+  padding: var(--espace-6) 0;
+}

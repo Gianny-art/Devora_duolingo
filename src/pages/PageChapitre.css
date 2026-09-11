@@ -1,0 +1,72 @@
+.page-chapitre__retour {
+  display: inline-block;
+  margin-top: var(--espace-5);
+  margin-bottom: var(--espace-4);
+  color: var(--couleur-texte-doux);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.page-chapitre__section {
+  margin-top: var(--espace-6);
+}
+
+.page-chapitre__titre-section {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--couleur-texte);
+  margin-bottom: var(--espace-3);
+}
+
+.page-chapitre__liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-3);
+}
+
+.page-chapitre__carte-lecon {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-3);
+  text-decoration: none;
+  color: var(--couleur-texte);
+  font-weight: 600;
+}
+
+.page-chapitre__puce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--couleur-primaire-clair);
+  color: var(--couleur-primaire);
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.page-chapitre__puce--vue {
+  background: var(--couleur-succes-clair);
+  color: var(--couleur-succes);
+}
+
+.page-chapitre__carte-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espace-4);
+  margin-bottom: var(--espace-3);
+}
+
+.page-chapitre__action-titre {
+  font-weight: 700;
+  color: var(--couleur-texte);
+}
+
+.page-chapitre__action-details {
+  font-size: 0.85rem;
+  color: var(--couleur-texte-doux);
+}

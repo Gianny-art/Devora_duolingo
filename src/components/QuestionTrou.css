@@ -1,0 +1,41 @@
+.question-trou__enonce {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  margin-bottom: var(--espace-5);
+  line-height: 1.4;
+}
+
+.question-trou__champ {
+  width: 100%;
+  padding: var(--espace-4);
+  border-radius: var(--rayon-m);
+  border: 2px solid var(--couleur-bordure);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--couleur-texte);
+  background: var(--couleur-surface);
+}
+
+.question-trou__champ:focus {
+  outline: none;
+  border-color: var(--couleur-primaire);
+}
+
+.question-trou__champ--correcte {
+  border-color: var(--couleur-succes);
+  background: var(--couleur-succes-clair);
+  color: var(--couleur-succes);
+}
+
+.question-trou__champ--incorrecte {
+  border-color: var(--couleur-erreur);
+  background: var(--couleur-erreur-clair);
+  color: var(--couleur-erreur);
+}
+
+.question-trou__correction {
+  margin-top: var(--espace-3);
+  font-size: 0.9rem;
+  color: var(--couleur-texte-doux);
+}

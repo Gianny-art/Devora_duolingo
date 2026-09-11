@@ -1,0 +1,32 @@
+.carte-resultat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espace-2);
+  text-align: center;
+  padding: var(--espace-6) var(--espace-5);
+  background: var(--couleur-surface);
+  border-radius: var(--rayon-l);
+  box-shadow: var(--ombre-carte);
+}
+
+.carte-resultat__pourcentage {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--couleur-texte);
+  margin-top: var(--espace-3);
+}
+
+.carte-resultat__statut {
+  font-weight: 700;
+  color: var(--couleur-texte-doux);
+}
+
+.carte-resultat__statut--reussi {
+  color: var(--couleur-succes);
+}
+
+.carte-resultat__xp {
+  font-weight: 700;
+  color: var(--couleur-accent-fonce);
+}

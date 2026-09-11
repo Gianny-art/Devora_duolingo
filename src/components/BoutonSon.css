@@ -1,0 +1,19 @@
+.bouton-son {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--couleur-surface);
+  color: var(--couleur-texte-doux);
+  box-shadow: var(--ombre-carte);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.bouton-son--actif {
+  color: var(--couleur-primaire);
+  background: var(--couleur-primaire-clair);
+}

@@ -1,0 +1,29 @@
+.page-lecon {
+  padding-top: var(--espace-5);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-lecon__entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--espace-2);
+}
+
+.page-lecon__lecture {
+  margin-bottom: var(--espace-6);
+}
+
+.page-lecon__mascotte {
+  display: flex;
+  justify-content: center;
+  margin: var(--espace-4) 0;
+}
+
+.page-lecon__contenu {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--couleur-texte);
+  margin-bottom: var(--espace-7);
+}

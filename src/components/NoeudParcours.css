@@ -1,0 +1,84 @@
+.noeud-parcours__lien {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.noeud-parcours__lien--desactive {
+  cursor: not-allowed;
+}
+
+.noeud-parcours {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espace-2);
+  width: 108px;
+}
+
+.noeud-parcours__mascotte {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flotter 2.4s ease-in-out infinite;
+}
+
+@keyframes flotter {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-6px); }
+}
+
+.noeud-parcours__pastille {
+  width: 76px;
+  height: 76px;
+  border-radius: 50% 50% 45% 55% / 55% 45% 55% 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+  transition: transform 0.15s ease;
+}
+
+.noeud-parcours__lien:hover .noeud-parcours__pastille {
+  transform: scale(1.05);
+}
+
+.noeud-parcours--disponible .noeud-parcours__pastille {
+  background: var(--couleur-primaire-clair);
+  border-color: var(--couleur-primaire);
+  color: var(--couleur-primaire);
+  box-shadow: var(--ombre-flottante);
+}
+
+.noeud-parcours--complete .noeud-parcours__pastille {
+  background: var(--couleur-succes-clair);
+  border-color: var(--couleur-succes);
+  color: var(--couleur-succes);
+}
+
+.noeud-parcours--verrouille .noeud-parcours__pastille {
+  background: #eceef3;
+  border-color: var(--couleur-bordure);
+  color: var(--couleur-texte-doux);
+}
+
+.noeud-parcours__numero {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.noeud-parcours__titre {
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--couleur-texte-doux);
+  line-height: 1.2;
+}
+
+.noeud-parcours--disponible .noeud-parcours__titre,
+.noeud-parcours--complete .noeud-parcours__titre {
+  color: var(--couleur-texte);
+}

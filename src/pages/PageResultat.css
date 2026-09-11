@@ -1,0 +1,19 @@
+.page-resultat {
+  padding-top: var(--espace-5);
+}
+
+.page-resultat__carte {
+  margin: var(--espace-6) 0;
+}
+
+.page-resultat__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-3);
+}
+
+.page-resultat__message {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--couleur-texte-doux);
+}

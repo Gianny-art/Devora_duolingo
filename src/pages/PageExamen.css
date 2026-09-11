@@ -1,0 +1,28 @@
+.page-examen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--espace-5);
+}
+
+.page-examen__entete {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-3);
+  margin-bottom: var(--espace-2);
+}
+
+.page-examen__avertissement {
+  font-size: 0.82rem;
+  color: var(--couleur-erreur);
+  font-weight: 600;
+  margin-bottom: var(--espace-6);
+}
+
+.page-examen__question {
+  flex: 1;
+}
+
+.page-examen__action {
+  padding: var(--espace-6) 0;
+}

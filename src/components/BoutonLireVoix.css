@@ -1,0 +1,19 @@
+.bouton-lire-voix {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--rayon-rond);
+  border: 2px solid var(--couleur-bordure);
+  background: var(--couleur-surface);
+  color: var(--couleur-texte-doux);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bouton-lire-voix--actif {
+  border-color: var(--couleur-primaire);
+  color: var(--couleur-primaire);
+  background: var(--couleur-primaire-clair);
+}

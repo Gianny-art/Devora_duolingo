@@ -1,0 +1,78 @@
+.page-stats {
+  padding-top: var(--espace-6);
+}
+
+.page-stats__resume {
+  margin: var(--espace-4) 0 var(--espace-6);
+}
+
+.page-stats__liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-3);
+}
+
+.page-stats__entete-carte {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-2);
+  margin-bottom: var(--espace-3);
+}
+
+.page-stats__numero {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--couleur-primaire);
+}
+
+.page-stats__titre {
+  font-weight: 700;
+  color: var(--couleur-texte);
+  flex: 1;
+}
+
+.page-stats__badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--couleur-succes);
+  background: var(--couleur-succes-clair);
+  padding: 2px 8px;
+  border-radius: var(--rayon-rond);
+}
+
+.page-stats__verrouille {
+  font-size: 0.85rem;
+  color: var(--couleur-texte-doux);
+}
+
+.page-stats__ligne {
+  display: grid;
+  grid-template-columns: 52px 1fr 40px;
+  align-items: center;
+  gap: var(--espace-3);
+  font-size: 0.8rem;
+  color: var(--couleur-texte-doux);
+  margin-bottom: var(--espace-2);
+}
+
+.page-stats__barre {
+  height: 8px;
+  border-radius: var(--rayon-rond);
+  background: var(--couleur-bordure);
+  overflow: hidden;
+}
+
+.page-stats__remplissage {
+  height: 100%;
+  background: var(--couleur-primaire);
+  border-radius: var(--rayon-rond);
+}
+
+.page-stats__remplissage--reussi {
+  background: var(--couleur-succes);
+}
+
+.page-stats__pourcentage {
+  text-align: right;
+  font-weight: 700;
+}
